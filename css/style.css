@@ -1,0 +1,246 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  height: 100vh;
+  background-image: url(../img/tangerine-newt-Ny5YFzSkf0E-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**********************
+Main container 
+**********************/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 94%;
+}
+.container-main {
+  align-self: center;
+  background-color: rgba(28, 27, 25, 0.85);
+  border-radius: 1em;
+  width: 90vw;
+  max-width: 55em;
+  color: #a0a0a0;
+}
+h1{
+  color: #fff;
+  padding: 0.5em 0 1em 0;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.title {
+  font-family: 'Rock Salt', sans-serif;
+}
+#intro {
+  text-align: center;
+  padding: 1em;
+}
+.hidden {
+  display: none;
+}
+/**********************
+Search container
+**********************/
+.search-container {
+  background-color: rgba(28, 27, 25, 0.85);
+  padding: 2em 3em;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  margin: 0;
+  gap: 1em;
+}
+.search-container input, .search-container button {
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+}
+.search-container input{
+  background-color: transparent;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 0.4em;
+  color: #a0a0a0;
+}
+.search-container input:focus {
+  border: 1px solid #fff;
+  border-radius: 0.5em;
+  color: #fff;
+}
+.search-container button {
+  border-radius: 0.5em;
+  background-color: rgb(223, 129,	39);
+  cursor: pointer;
+}
+.msg {
+  color: #fff;
+}
+/**********************
+Result container
+**********************/
+.container-result {
+  padding: 2em 3em;
+}
+.container-flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  padding-bottom: 3em;
+}
+/**********************
+Result img container
+**********************/
+#result-img {
+  align-self: center;
+}
+#result-img img {
+  display: block;
+  max-width: 10em;
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+}
+#result-img p {
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.8em;
+}
+#result-img i {
+  margin-right: 0.5em;
+}
+/**********************
+Result info container
+**********************/
+.container-result h2 {
+  font-size: 1.4em;
+  text-align: center;
+  border-bottom: 1px solid rgb(223, 129,	39);
+  padding: 0.2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+#result-info p {
+  font-size: 1em;
+  text-align: justify;
+  padding: 0.5em 0.8em;
+}
+#result-info ul {
+  margin: 0.5em 0 1em 1.8em;
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+#result-info li {
+  padding: 0.3em;
+}
+.container-result h3 {
+  text-align: center;
+  border-top: 1px solid rgb(223, 129,	39);
+  padding: 0.3em;
+  color: #fff;
+}
+/**********************
+All drinks container
+**********************/
+.all-drinks-links {
+  border-top: 1px solid rgb(223, 129,	39);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding-top: 1.5em;
+}
+.all-drinks img {
+  display: inline-block;
+  max-width: 4em;
+  padding: 2px;
+  border-radius: 50%;
+}
+/**********************
+Footer
+**********************/
+footer {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+footer a:link {
+  text-decoration: none;
+}
+.credits {
+  text-align: right;
+  font-size: 0.7rem;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/******************************************/
+@media screen and (max-width: 900px) {
+  .container-flex {
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-flex {
+    gap: 0.2em;
+    padding-bottom: 0.8em;
+  }
+  .all-drinks img {
+    max-width: 3.5em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .search-container {
+    padding: 1em;
+  }
+  .container-result {
+    padding: 1em 2em;
+  }
+  .container-result h3 {
+    display: none;
+  }
+  #result-info ul {
+    border-top: 1px solid rgb(223, 129,	39);
+    padding: 0.8em 0;
+    margin: 0;
+  }
+  #result-info li {
+    padding: 0.2em;
+    text-align: center;
+  }
+  .container-flex {
+    display: block;
+    padding: 0;
+  }
+  #result-img img {
+    margin: auto;
+    max-width: 9em;
+  }
+  #result-img p {
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  #result-info p {
+    text-align: center;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/******************************************/

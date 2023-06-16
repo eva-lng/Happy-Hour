@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Cocktail App</title>
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jura&family=Rock+Salt&display=swap" rel="stylesheet">
+		<!-- Stylesheet -->
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/5d7bb29ba5.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="container-main">
+				<h1 class="title">Happy Hour</h1>
+				<section class="search-container">
+					<input type="text" id="user-inp" placeholder="Enter a cocktail name" value="">
+					<button id="search-btn">Search</button>
+				</section>
+				<section class="container-result">
+					<p id="intro">Welcome to Happy Hour! You can search the database to find a specific cocktail recipe or discover your new favorite drink!</p>
+					<div class="container-flex">
+						<div id="result-img"></div>
+						<div id="result-info"></div>
+					</div>
+					<div class="all-drinks"></div>
+				</section>
+			</main>
+		</div>
+		<footer>
+			<section class="logo">
+				<a href="#"><i class="fa-brands fa-github"></i></a>
+				&nbsp;
+				<span class="title">Happy Hour</span>
+				&nbsp;
+				<span>2023</span>
+			</section>
+			<section class="credits">
+				<p>Background Image by <a href="https://unsplash.com/@tangerinenewt">Tangerine Newt</a></p>
+				<p>Data from the <a href="https://www.thecocktaildb.com/api.php">Cocktail DB</a></p>
+			</section>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
