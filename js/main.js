@@ -103,6 +103,9 @@ function getDrinkInfo(id) {
 
 // function to display all similar drinks
 function displayAllDrinks(drinks) {
+  // clear drinksCon
+  drinksCon.innerHTML = '';
+
   if (drinks.length > 1) {
     drinksCon.innerHTML = `
     <div class="all-drinks-links"></div>
