@@ -5,7 +5,7 @@ This web application functions as a cocktail recipe finder, allowing users to se
 
 **Tech used:** HTML, CSS, JavaScript, TheCocktailDB API
 
-**Link to project:**
+**Link to project:** https://happyhourdrinks.netlify.app
 
 ## Optimizations:
 
